@@ -1,0 +1,326 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 214 100% 98%; /* #f5f9fe */
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 222.2 47.4% 11.2%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 210 40% 98%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+
+  /* Blue Theme */
+  .theme-blue {
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 217 91% 60%;
+    --accent: 217 91% 95%;
+    --accent-foreground: 217 91% 60%;
+  }
+
+  .dark.theme-blue {
+    --primary: 217 91% 60%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 217 91% 60%;
+    --accent: 217 91% 25%;
+    --accent-foreground: 0 0% 100%;
+    --table-header-bg: 217 91% 30%;
+    --table-cell-bg: 217 91% 15%;
+  }
+
+  /* Green Theme */
+  .theme-green {
+    --primary: 142 71% 45%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 142 71% 45%;
+    --accent: 142 71% 90%;
+    --accent-foreground: 142 71% 45%;
+  }
+
+  .dark.theme-green {
+    --primary: 142 71% 45%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 142 71% 45%;
+    --accent: 142 71% 20%;
+    --accent-foreground: 0 0% 100%;
+    --table-header-bg: 142 71% 25%;
+    --table-cell-bg: 142 71% 12%;
+  }
+
+  /* Purple Theme */
+  .theme-purple {
+    --primary: 270 91% 65%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 270 91% 65%;
+    --accent: 270 91% 95%;
+    --accent-foreground: 270 91% 65%;
+  }
+
+  .dark.theme-purple {
+    --primary: 270 91% 65%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 270 91% 65%;
+    --accent: 270 91% 25%;
+    --accent-foreground: 0 0% 100%;
+    --table-header-bg: 270 91% 30%;
+    --table-cell-bg: 270 91% 15%;
+  }
+
+  /* Orange Theme */
+  .theme-orange {
+    --primary: 24 95% 55%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 24 95% 55%;
+    --accent: 24 95% 95%;
+    --accent-foreground: 24 95% 55%;
+  }
+
+  .dark.theme-orange {
+    --primary: 24 95% 55%;
+    --primary-foreground: 0 0% 100%;
+    --ring: 24 95% 55%;
+    --accent: 24 95% 25%;
+    --accent-foreground: 0 0% 100%;
+    --table-header-bg: 24 95% 30%;
+    --table-cell-bg: 24 95% 15%;
+  }
+
+  /* Enhanced dark mode styles for tables */
+  .dark .attainment-table th {
+    color: white;
+    border-color: rgba(100, 116, 139, 0.8);
+    border-width: 1.5px;
+  }
+
+  .dark .attainment-table td {
+    color: rgba(255, 255, 255, 0.9);
+    border-color: rgba(100, 116, 139, 0.8);
+    border-width: 1.5px;
+  }
+
+  .dark .attainment-table .edit-cell {
+    color: rgba(255, 255, 255, 0.9);
+    background-color: rgba(30, 41, 59, 0.7);
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+/* Add specific styles for the attainment table cells */
+.dark .cell-edit-placeholder {
+  color: rgba(255, 255, 255, 0.7);
+  font-weight: 500;
+}
+
+.dark .table-section-header {
+  background-color: rgba(30, 41, 59, 0.8);
+  color: white;
+  font-weight: 600;
+}
+
+.dark .table-column-header {
+  background-color: rgba(30, 41, 59, 0.6);
+  color: rgba(255, 255, 255, 0.9);
+  font-weight: 500;
+}
+
+/* Improve contrast for colored sections in dark mode */
+.dark .bg-orange-900\/20 {
+  background-color: rgba(194, 65, 12, 0.5);
+}
+
+.dark .bg-orange-900\/30 {
+  background-color: rgba(194, 65, 12, 0.6);
+}
+
+.dark .bg-orange-900\/40 {
+  background-color: rgba(194, 65, 12, 0.7);
+}
+
+.dark .bg-orange-900\/50 {
+  background-color: rgba(194, 65, 12, 0.8);
+}
+
+.dark .bg-orange-900\/70 {
+  background-color: rgba(194, 65, 12, 0.9);
+}
+
+.dark .bg-blue-900\/20 {
+  background-color: rgba(30, 58, 138, 0.5);
+}
+
+.dark .bg-blue-900\/30 {
+  background-color: rgba(30, 58, 138, 0.6);
+}
+
+.dark .bg-blue-900\/40 {
+  background-color: rgba(30, 58, 138, 0.7);
+}
+
+.dark .bg-blue-900\/50 {
+  background-color: rgba(30, 58, 138, 0.8);
+}
+
+.dark .bg-blue-900\/70 {
+  background-color: rgba(30, 58, 138, 0.9);
+}
+
+.dark .bg-green-900\/20 {
+  background-color: rgba(20, 83, 45, 0.5);
+}
+
+.dark .bg-green-900\/30 {
+  background-color: rgba(20, 83, 45, 0.6);
+}
+
+.dark .bg-green-900\/40 {
+  background-color: rgba(20, 83, 45, 0.7);
+}
+
+.dark .bg-green-900\/50 {
+  background-color: rgba(20, 83, 45, 0.8);
+}
+
+.dark .bg-green-900\/70 {
+  background-color: rgba(20, 83, 45, 0.9);
+}
+
+.dark .bg-yellow-900\/20 {
+  background-color: rgba(113, 63, 18, 0.5);
+}
+
+.dark .bg-yellow-900\/30 {
+  background-color: rgba(113, 63, 18, 0.6);
+}
+
+.dark .bg-yellow-900\/40 {
+  background-color: rgba(113, 63, 18, 0.7);
+}
+
+.dark .bg-yellow-900\/50 {
+  background-color: rgba(113, 63, 18, 0.8);
+}
+
+.dark .bg-yellow-900\/70 {
+  background-color: rgba(113, 63, 18, 0.9);
+}
+
+.dark .bg-red-900\/20 {
+  background-color: rgba(127, 29, 29, 0.5);
+}
+
+.dark .bg-red-900\/30 {
+  background-color: rgba(127, 29, 29, 0.6);
+}
+
+.dark .bg-red-900\/40 {
+  background-color: rgba(127, 29, 29, 0.7);
+}
+
+.dark .bg-red-900\/50 {
+  background-color: rgba(127, 29, 29, 0.8);
+}
+
+.dark .bg-red-900\/70 {
+  background-color: rgba(127, 29, 29, 0.9);
+}
+
+/* Add a subtle box shadow to the table in dark mode for better depth */
+.dark .attainment-table,
+.dark table[class*="border-collapse"] {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3), 0 2px 4px -1px rgba(0, 0, 0, 0.2);
+}
+
+/* Improve the table header contrast in dark mode */
+.dark thead tr th {
+  background-color: rgba(30, 41, 59, 0.8);
+  color: white;
+  font-weight: 600;
+}
+
+/* Add a subtle highlight to editable cells on hover */
+.dark td[data-row] div:hover {
+  background-color: rgba(100, 116, 139, 0.3);
+  border-radius: 4px;
+}
+
+/* Add a subtle glow to the active cell */
+.dark td[data-row] div:focus-within {
+  box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.5);
+  border-radius: 4px;
+}
+
+/* Improve the visibility of the table in the detailed marks section */
+.dark .p-6 .bg-card.dark\:bg-slate-800\/50 {
+  background-color: rgba(30, 41, 59, 0.9);
+  border-color: rgba(100, 116, 139, 0.5);
+  border-width: 1.5px;
+}
+
+/* Custom light mode background color - keeping this for backward compatibility */
+.light-mode-bg {
+  background-color: #f5f9fe;
+}
