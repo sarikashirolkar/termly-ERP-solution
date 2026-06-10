@@ -14,7 +14,7 @@ export interface UserCredential {
 export const allCredentials: UserCredential[] = [
   {
     id: "admin1",
-    email: "admin@nexalink.edu",
+    email: "admin@termly.edu",
     password: "admin123",
     role: "admin",
     name: "System Administrator",
@@ -22,7 +22,7 @@ export const allCredentials: UserCredential[] = [
   },
   {
     id: "principal1",
-    email: "principal@nexalink.edu",
+    email: "principal@termly.edu",
     password: "principal123",
     role: "principal",
     name: "Dr. Ganesha Prasad",

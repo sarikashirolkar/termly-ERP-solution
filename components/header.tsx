@@ -31,7 +31,7 @@ export function Header() {
             <div className="relative w-32 h-8 sm:w-36 sm:h-10 md:w-48 md:h-12">
               <Image
                 src="/images/logolight(1).png"
-                alt="MyNexaLink Logo Light"
+                alt="TERMLY Logo Light"
                 fill
                 className="object-contain block dark:hidden"
                 priority
@@ -39,12 +39,12 @@ export function Header() {
                   // Fallback to text if image fails to load
                   const target = e.target as HTMLImageElement
                   target.style.display = "none"
-                  target.parentElement!.innerHTML += '<span class="font-bold text-xl">MyNexaLink</span>'
+                  target.parentElement!.innerHTML += '<span class="font-bold text-xl">TERMLY</span>'
                 }}
               />
               <Image
                 src="/images/logodark.png"
-                alt="MyNexaLink Logo Dark"
+                alt="TERMLY Logo Dark"
                 fill
                 className="object-contain hidden dark:block"
                 priority
@@ -52,7 +52,7 @@ export function Header() {
                   // Fallback to text if image fails to load
                   const target = e.target as HTMLImageElement
                   target.style.display = "none"
-                  target.parentElement!.innerHTML += '<span class="font-bold text-xl text-white">MyNexaLink</span>'
+                  target.parentElement!.innerHTML += '<span class="font-bold text-xl text-white">TERMLY</span>'
                 }}
               />
             </div>

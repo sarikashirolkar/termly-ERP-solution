@@ -12,9 +12,9 @@ export default function LearnMorePage() {
         <section className="py-12 md:py-16 bg-muted/50">
           <div className="container mx-auto px-4 md:px-6">
             <div className="text-center mb-10">
-              <h1 className="text-4xl font-bold tracking-tight">About MyNexaLink</h1>
+              <h1 className="text-4xl font-bold tracking-tight">About TERMLY</h1>
               <p className="text-xl text-muted-foreground mt-4 max-w-3xl mx-auto">
-                Learn more about how MyNexaLink is transforming academic management
+                Learn more about how TERMLY is transforming academic management
               </p>
             </div>
           </div>
@@ -26,7 +26,7 @@ export default function LearnMorePage() {
               <div>
                 <h2 className="text-3xl font-bold mb-4">Our Mission</h2>
                 <p className="text-muted-foreground mb-6">
-                  At MyNexaLink, we're committed to revolutionizing academic management through innovative technology
+                  At TERMLY, we're committed to revolutionizing academic management through innovative technology
                   solutions. Our mission is to empower educational institutions with tools that streamline
                   administrative processes, enhance teaching effectiveness, and improve student outcomes.
                 </p>
@@ -36,7 +36,7 @@ export default function LearnMorePage() {
                 </p>
               </div>
               <div className="bg-muted rounded-lg p-8">
-                <h3 className="text-xl font-semibold mb-4">Why Choose MyNexaLink?</h3>
+                <h3 className="text-xl font-semibold mb-4">Why Choose TERMLY?</h3>
                 <ul className="space-y-3">
                   <li className="flex items-start gap-3">
                     <CheckCircle className="h-5 w-5 text-primary flex-shrink-0 mt-0.5" />
@@ -69,7 +69,7 @@ export default function LearnMorePage() {
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold">Our Approach</h2>
               <p className="text-muted-foreground mt-2 max-w-2xl mx-auto">
-                We've designed MyNexaLink with a focus on these core principles
+                We've designed TERMLY with a focus on these core principles
               </p>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -90,7 +90,7 @@ export default function LearnMorePage() {
                 </CardHeader>
                 <CardContent>
                   <p className="text-muted-foreground">
-                    MyNexaLink transforms raw academic data into actionable insights, helping institutions make informed
+                    TERMLY transforms raw academic data into actionable insights, helping institutions make informed
                     decisions about curriculum, teaching methods, and student support.
                   </p>
                 </CardContent>
@@ -102,7 +102,7 @@ export default function LearnMorePage() {
                 <CardContent>
                   <p className="text-muted-foreground">
                     We're constantly evolving our platform based on user feedback and educational research to ensure
-                    MyNexaLink remains at the forefront of academic management technology.
+                    TERMLY remains at the forefront of academic management technology.
                   </p>
                 </CardContent>
               </Card>
@@ -114,7 +114,7 @@ export default function LearnMorePage() {
           <div className="container mx-auto px-4 md:px-6 text-center">
             <h2 className="text-3xl font-bold mb-6">Ready to transform your institution?</h2>
             <p className="text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Join the growing community of educational institutions using MyNexaLink to streamline their academic
+              Join the growing community of educational institutions using TERMLY to streamline their academic
               management
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
@@ -132,7 +132,7 @@ export default function LearnMorePage() {
       <footer className="border-t py-6 md:py-8 dark:bg-[#131924] bg-[#f9f9f7]">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center text-sm text-muted-foreground">
-            <p>&copy; {new Date().getFullYear()} MyNexaLink Academic System. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} TERMLY Academic System. All rights reserved.</p>
           </div>
         </div>
       </footer>

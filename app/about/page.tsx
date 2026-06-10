@@ -10,7 +10,7 @@ export default function AboutPage() {
       <div className="container mx-auto py-6 md:py-10 px-4 md:px-6 flex-1">
         <div className="max-w-5xl mx-auto space-y-10">
           <div className="text-center space-y-4">
-            <h1 className="text-3xl font-bold">About MyNexaLink</h1>
+            <h1 className="text-3xl font-bold">About TERMLY</h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">
               Streamline Academic Management with our comprehensive platform
             </p>
@@ -23,7 +23,7 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground">
-                  At MyNexaLink, our mission is to transform academic management through innovative technology. We aim
+                  At TERMLY, our mission is to transform academic management through innovative technology. We aim
                   to streamline administrative processes, enhance communication between students and educators, and
                   provide valuable insights through data analytics. Our platform is designed to make academic management
                   more efficient, transparent, and accessible for all stakeholders in the educational ecosystem.
@@ -143,7 +143,7 @@ export default function AboutPage() {
               </CardHeader>
               <CardContent>
                 <p className="text-muted-foreground mb-6">
-                  NexaLink is developed by a dedicated team of education technology specialists, software engineers, and
+                  TERMLY is developed by a dedicated team of education technology specialists, software engineers, and
                   former educators who understand the challenges faced by academic institutions. Our diverse team brings
                   together expertise in educational management, user experience design, and cutting-edge technology to
                   create a platform that truly serves the needs of modern educational institutions.
@@ -182,7 +182,7 @@ export default function AboutPage() {
       <footer className="border-t py-6 md:py-8 dark:bg-[#131924] bg-[#f9f9f7]">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center text-sm text-muted-foreground">
-            <p>&copy; {new Date().getFullYear()} MyNexaLink Edtechz. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} TERMLY Edtechz. All rights reserved.</p>
           </div>
         </div>
       </footer>

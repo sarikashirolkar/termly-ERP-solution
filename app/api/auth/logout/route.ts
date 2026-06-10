@@ -5,7 +5,7 @@ export async function POST() {
   try {
     // Clear the session cookie
     cookies().delete("supabase-auth-token")
-    cookies().delete("nexalink_user_role") // Clear custom role cookie if used
+    cookies().delete("termly_user_role") // Clear custom role cookie if used
 
     return NextResponse.json({ message: "Logged out successfully" }, { status: 200 })
   } catch (error) {

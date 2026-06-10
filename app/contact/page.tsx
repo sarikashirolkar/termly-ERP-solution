@@ -16,7 +16,7 @@ export default function ContactPage() {
           <div className="text-center space-y-4">
             <h1 className="text-3xl font-bold">Contact Us</h1>
             <p className="text-muted-foreground max-w-2xl mx-auto">
-              Get in touch with our team for any questions, feedback, or support regarding the MyNexaLink Academic
+              Get in touch with our team for any questions, feedback, or support regarding the TERMLY Academic
               System.
             </p>
           </div>
@@ -66,7 +66,7 @@ export default function ContactPage() {
                     <div>
                       <h3 className="font-medium">Address</h3>
                       <p className="text-muted-foreground mt-1">
-                        MyNexaLink, Sai Vidya Institute of Technology, <br />
+                        TERMLY, Sai Vidya Institute of Technology, <br />
                         Rajanukunte, Bengaluru, Karnataka. <br />
                         Pincode: 560064
                       </p>
@@ -86,7 +86,7 @@ export default function ContactPage() {
                     <Mail className="h-6 w-6 text-primary mt-0.5" />
                     <div>
                       <h3 className="font-medium">Email</h3>
-                      <p className="text-muted-foreground mt-1">info@mynexalink.com</p>
+                      <p className="text-muted-foreground mt-1">info@termly.com</p>
                     </div>
                   </div>
                 </CardContent>
@@ -122,7 +122,7 @@ export default function ContactPage() {
       <footer className="border-t py-6 md:py-8 dark:bg-[#131924] bg-[#f9f9f7]">
         <div className="container mx-auto px-4 md:px-6">
           <div className="text-center text-sm text-muted-foreground">
-            <p>&copy; {new Date().getFullYear()} MyNexaLink Academic System. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} TERMLY Academic System. All rights reserved.</p>
           </div>
         </div>
       </footer>

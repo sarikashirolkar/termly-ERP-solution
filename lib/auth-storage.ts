@@ -1,8 +1,8 @@
 import type { UserRole } from "./database-schema"
 
-const USER_KEY = "nexalink_user"
-const TOKEN_KEY = "nexalink_token"
-const ROLE_KEY = "nexalink_role"
+const USER_KEY = "termly_user"
+const TOKEN_KEY = "termly_token"
+const ROLE_KEY = "termly_role"
 
 export const authStorage = {
   setUser: (user: any) => {

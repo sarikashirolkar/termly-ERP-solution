@@ -1,4 +1,4 @@
-// This file contains dummy data for the NexaLink Academic System
+// This file contains dummy data for the TERMLY Academic System
 
 // Types
 export type UserRole = "student" | "faculty" | "hod" | "admin" | "principal" | "coordinator"

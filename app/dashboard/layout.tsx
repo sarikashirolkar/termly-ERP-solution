@@ -467,14 +467,14 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
             <Link href="/dashboard" className="flex items-center">
               <Image
                 src="/images/logodark.png"
-                alt="NexaLink Logo"
+                alt="TERMLY Logo"
                 width={150}
                 height={40}
                 className="hidden dark:block"
               />
               <Image
                 src="/images/logolight(1).png"
-                alt="NexaLink Logo"
+                alt="TERMLY Logo"
                 width={150}
                 height={40}
                 className="block dark:hidden"
@@ -781,14 +781,14 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
             <Link href="/dashboard" className="flex items-center" onClick={() => setMobileMenuOpen(false)}>
               <Image
                 src="/images/logodark.png"
-                alt="NexaLink Logo"
+                alt="TERMLY Logo"
                 width={150}
                 height={40}
                 className="hidden dark:block"
               />
               <Image
                 src="/images/logolight(1).png"
-                alt="NexaLink Logo"
+                alt="TERMLY Logo"
                 width={150}
                 height={40}
                 className="block dark:hidden"

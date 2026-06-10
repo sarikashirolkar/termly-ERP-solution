@@ -115,7 +115,7 @@ export default function FeaturesPage() {
           Powerful Features for Academic Excellence
         </h1>
         <p className="mt-4 text-lg text-muted-foreground max-w-3xl mx-auto">
-          NexaLink offers a comprehensive suite of tools designed to streamline academic operations, enhance learning
+          TERMLY offers a comprehensive suite of tools designed to streamline academic operations, enhance learning
           experiences, and improve administrative efficiency.
         </p>
       </div>

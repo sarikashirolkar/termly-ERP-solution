@@ -30,7 +30,7 @@ export default function Home() {
             <div className="flex flex-col justify-center space-y-4">
               <div className="space-y-2">
                 <h1 className="text-3xl md:text-5xl font-bold tracking-tighter">
-                  MyNexaLink Academic Management System
+                  TERMLY Academic Management System
                 </h1>
                 <p className="text-muted-foreground md:text-xl">Your One Stop for all the Academic stuff.</p>
               </div>
@@ -143,7 +143,7 @@ export default function Home() {
             <div className="text-center mb-10">
               <h2 className="text-3xl font-bold">Who Benefits</h2>
               <p className="text-muted-foreground mt-2">
-                MyNexaLink serves the entire academic ecosystem with role-specific features
+                TERMLY serves the entire academic ecosystem with role-specific features
               </p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-8">
@@ -226,13 +226,13 @@ export default function Home() {
                 <div className="relative w-36 h-10">
                   <Image
                     src="/images/logolight(1).png"
-                    alt="MyNexaLink Logo Light"
+                    alt="TERMLY Logo Light"
                     fill
                     className="object-contain block dark:hidden"
                   />
                   <Image
                     src="/images/logodark.png"
-                    alt="MyNexaLink Logo Dark"
+                    alt="TERMLY Logo Dark"
                     fill
                     className="object-contain hidden dark:block"
                   />
@@ -305,7 +305,7 @@ export default function Home() {
             </div>
           </div>
           <div className="mt-8 pt-6 border-t text-center text-sm text-muted-foreground">
-            <p>&copy; {new Date().getFullYear()} MyNexaLink Edtechz. All rights reserved.</p>
+            <p>&copy; {new Date().getFullYear()} TERMLY Edtechz. All rights reserved.</p>
           </div>
         </div>
       </footer>

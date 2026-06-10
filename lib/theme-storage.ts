@@ -1,7 +1,7 @@
 // Utility functions for theme storage and persistence
 
 import type { Theme } from "next-themes"
-const THEME_KEY = "nexalink_theme"
+const THEME_KEY = "termly_theme"
 
 /**
  * Save the user's theme preference to localStorage

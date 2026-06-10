@@ -13,10 +13,10 @@ export const defaultReminderTemplate: EmailTemplate = {
   subject: "Reminder: Pending Form Submission",
   body: `Dear {name},
 
-This is a friendly reminder that you have a pending form submission in the NexaLink Academic System. Please log in to your account and complete the submission at your earliest convenience.
+This is a friendly reminder that you have a pending form submission in the TERMLY Academic System. Please log in to your account and complete the submission at your earliest convenience.
 
 Thank you,
-NexaLink Academic System`,
+TERMLY Academic System`,
 }
 
 export async function sendEmail(

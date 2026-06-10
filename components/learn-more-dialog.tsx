@@ -20,12 +20,12 @@ export function LearnMoreDialog({ open, onOpenChange }: LearnMoreDialogProps) {
     <Dialog open={open} onOpenChange={onOpenChange}>
       <DialogContent className="sm:max-w-[425px]">
         <DialogHeader>
-          <DialogTitle>Learn More About NexaLink</DialogTitle>
+          <DialogTitle>Learn More About TERMLY</DialogTitle>
           <DialogDescription>Discover the features and benefits of our academic management system.</DialogDescription>
         </DialogHeader>
         <div className="grid gap-4 py-4">
           <p>
-            NexaLink is a comprehensive academic management system designed to streamline various administrative and
+            TERMLY is a comprehensive academic management system designed to streamline various administrative and
             academic processes for educational institutions.
           </p>
           <p>Key features include:</p>
