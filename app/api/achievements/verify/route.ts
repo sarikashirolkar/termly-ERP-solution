@@ -1,4 +1,4 @@
-import { NextResponse } from "next/request"
+import { NextResponse } from "next/server"
 import { achievementService } from "@/lib/supabase-service"
 
 export async function POST(request: Request) {
