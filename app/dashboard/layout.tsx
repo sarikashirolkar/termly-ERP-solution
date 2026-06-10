@@ -53,6 +53,7 @@ import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar"
 import { ThemeToggle } from "@/components/theme-toggle"
 import { ContactUsDialog } from "@/components/contact-us-dialog"
 import { NotificationsDropdown } from "@/components/notifications-dropdown"
+import { sanitizeUserLike } from "@/lib/name-sanitizer"
 import * as z from "zod"
 import { Label } from "@/components/ui/label"
 
@@ -152,7 +153,8 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
             variant: "destructive",
           })
         } else {
-          const parsedUser = JSON.parse(storedUser)
+          const parsedUser = sanitizeUserLike(JSON.parse(storedUser))
+          localStorage.setItem("user", JSON.stringify(parsedUser))
           setUser(parsedUser)
 
           // Determine the initial active role based on the user's actual role
@@ -246,7 +248,7 @@ export default function DashboardLayout({ children }: DashboardLayoutProps) {
             if (user) {
               try {
                 // Store only the compressed image
-                const updatedUser = { ...user, profilePicture: compressedDataUrl }
+                const updatedUser = sanitizeUserLike({ ...user, profilePicture: compressedDataUrl })
                 localStorage.setItem("user", JSON.stringify(updatedUser))
                 setUser(updatedUser)
                 toast({

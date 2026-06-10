@@ -1,6 +1,7 @@
 import { NextResponse } from "next/server"
 import bcrypt from "bcryptjs"
 import { supabase } from "@/lib/supabase"
+import { sanitizeUserLike } from "@/lib/name-sanitizer"
 
 export async function POST(request: Request) {
   try {
@@ -63,7 +64,7 @@ export async function POST(request: Request) {
 
     // Return user data (excluding password)
     const { password_hash, ...userWithoutPassword } = user
-    const userWithEffectiveRole = { ...userWithoutPassword, role: effectiveRole }
+    const userWithEffectiveRole = sanitizeUserLike({ ...userWithoutPassword, role: effectiveRole })
 
     return NextResponse.json({
       success: true,

@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react"
 import supabase from "@/lib/supabase-client" // Corrected import
+import { sanitizeUserLike } from "@/lib/name-sanitizer"
 
 interface User {
   id: string
@@ -29,14 +30,16 @@ export function useAuth() {
           const { data: userData } = await supabase.from("users").select("*").eq("id", session.user.id).single()
 
           if (userData) {
-            setUser({
-              id: userData.id,
-              email: userData.email,
-              full_name: userData.full_name,
-              role: userData.role,
-              first_name: userData.first_name,
-              last_name: userData.last_name,
-            })
+            setUser(
+              sanitizeUserLike({
+                id: userData.id,
+                email: userData.email,
+                full_name: userData.full_name,
+                role: userData.role,
+                first_name: userData.first_name,
+                last_name: userData.last_name,
+              }),
+            )
           }
         }
       } catch (error) {
@@ -56,14 +59,16 @@ export function useAuth() {
         const { data: userData } = await supabase.from("users").select("*").eq("id", session.user.id).single()
 
         if (userData) {
-          setUser({
-            id: userData.id,
-            email: userData.email,
-            full_name: userData.full_name,
-            role: userData.role,
-            first_name: userData.first_name,
-            last_name: userData.last_name,
-          })
+          setUser(
+            sanitizeUserLike({
+              id: userData.id,
+              email: userData.email,
+              full_name: userData.full_name,
+              role: userData.role,
+              first_name: userData.first_name,
+              last_name: userData.last_name,
+            }),
+          )
         }
       } else {
         setUser(null)
